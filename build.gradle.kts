@@ -34,3 +34,10 @@ tasks.withType<KotlinCompile> {
 application {
     mainClass.set("MainKt")
 }
+tasks {
+    withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+        archiveBaseName.set("ServerKtor3")
+        archiveClassifier.set("")
+        archiveVersion.set("")
+    }
+}
