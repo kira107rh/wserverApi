@@ -14,6 +14,10 @@ fun Application.configureRouting(){
         get ("/web"){
             call.respondRedirect("http://www.google.com")
         }
+        get("/say"){
+            call.respondText { "hellow" }
+
+        }
 
     }
 
